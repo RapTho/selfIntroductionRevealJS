@@ -4,9 +4,7 @@ This repository contains the code of my self introduction which I built using re
 
 ## Link to online version
 
-```
-https://selfintroductionrevealjs.web.app/
-```
+[https://selfintroductionrevealjs.web.app/](https://selfintroductionrevealjs.web.app/)
 
 ## How to use
 
