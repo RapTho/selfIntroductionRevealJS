@@ -1,0 +1,50 @@
+.introDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profilePicture {
+  width: 25%;
+}
+.profilePicture img {
+  margin-top: 45px !important;
+  border-radius: 5px;
+  -webkit-box-shadow: 9px 9px 7px -3px rgba(0, 0, 0, 0.36);
+  box-shadow: 9px 9px 7px -3px rgba(0, 0, 0, 0.36);
+}
+
+.introCode {
+  width: 75%;
+}
+
+.contactDetails {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  text-align: left;
+  margin-left: 25%;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flexImage {
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+  width: 100%;
+  overflow: hidden;
+}
