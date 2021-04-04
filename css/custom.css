@@ -6,7 +6,7 @@
 }
 
 .profilePicture {
-  width: 25%;
+  width: 20%;
 }
 .profilePicture img {
   margin-top: 45px !important;
@@ -16,7 +16,7 @@
 }
 
 .introCode {
-  width: 75%;
+  width: 80%;
 }
 
 .contactDetails {
@@ -44,7 +44,14 @@
 .flexImage {
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
   width: 100%;
   overflow: hidden;
+}
+
+.techIcon {
+  height: 55%;
+}
+
+.elastic {
+  padding-bottom: 10px;
 }
