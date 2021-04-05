@@ -55,3 +55,14 @@
 .elastic {
   padding-bottom: 10px;
 }
+
+.githubFork {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.githubFork img {
+  width: 85px;
+  height: 85px;
+}
