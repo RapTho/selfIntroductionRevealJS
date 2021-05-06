@@ -21,6 +21,12 @@ cd selfIntroductionRevealJS
 npm install
 ```
 
+Compile resources
+
+```
+npx gulp
+```
+
 Start the development server
 
 ```
