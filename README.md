@@ -4,7 +4,9 @@ This repository contains the code of my self introduction which I built using re
 
 ## Link to online version
 
-[https://selfintroductionrevealjs.web.app/](https://selfintroductionrevealjs.web.app/)
+Link: [https://selfintro.g4gvkhmn7m8.eu-de.codeengine.appdomain.cloud//](https://selfintro.g4gvkhmn7m8.eu-de.codeengine.appdomain.cloud/)
+
+If not opened for a while, it might take <1min to start up a new container and present the website. [IBM Cloud Code Engine](https://www.ibm.com/cloud/code-engine) scales down the app to safe cost, if nobody uses the website.
 
 ## Requirements
 
