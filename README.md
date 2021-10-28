@@ -6,6 +6,10 @@ This repository contains the code of my self introduction which I built using re
 
 [https://selfintroductionrevealjs.web.app/](https://selfintroductionrevealjs.web.app/)
 
+## Requirements
+
+A modern version of Node.js and its package manager npm. Download and install it [here](https://nodejs.org/en/download/).
+
 ## How to use
 
 Clone the repository
