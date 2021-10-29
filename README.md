@@ -6,8 +6,6 @@ This repository contains the code of my self introduction which I built using re
 
 Link: [https://selfintro-raphael-tholl.g4zskuby30m.eu-de.codeengine.appdomain.cloud](https://selfintro-raphael-tholl.g4zskuby30m.eu-de.codeengine.appdomain.cloud)
 
-If not opened for a while, it might take <1min to start up a new container and present the website. [IBM Cloud Code Engine](https://www.ibm.com/cloud/code-engine) scales down the app to safe cost, if nobody uses the website.
-
 ## Requirements
 
 A modern version of Node.js and its package manager npm. Download and install it [here](https://nodejs.org/en/download/).
