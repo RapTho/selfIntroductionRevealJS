@@ -66,3 +66,20 @@
   width: 45px;
   height: 70px;
 }
+
+.keepLeft {
+  text-align: left;
+}
+
+div.keepLeft > ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+div.keepLeft > h3 {
+  letter-spacing: normal;
+}
+
+div.keepLeft > ul > li {
+  margin-top: 10px;
+}
