@@ -1,7 +1,6 @@
 FROM node@sha256:19d57c845c443062583351ede52648146608b25268e868edf5b2594a2165867e
 
-MAINTAINER Raphael Tholl raphael.tholl@ibm.com
-
+LABEL author="Raphael Tholl raphael.tholl@ibm.com"
 LABEL description="My personal introduction using reveal.js"
 
 ARG APP_HOME=/app
