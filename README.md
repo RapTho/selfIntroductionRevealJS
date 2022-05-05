@@ -4,7 +4,7 @@ This repository contains the code of my self introduction which I built using re
 
 ## Link to online version
 
-Link: [https://selfintro-raphael-tholl.g4zskuby30m.eu-de.codeengine.appdomain.cloud](https://selfintro-raphael-tholl.g4zskuby30m.eu-de.codeengine.appdomain.cloud)
+Link: [www.raphael-tholl.ch](www.raphael-tholl.ch)
 
 ## Requirements
 
