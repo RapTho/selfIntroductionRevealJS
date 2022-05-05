@@ -4,7 +4,7 @@ This repository contains the code of my self introduction which I built using re
 
 ## Link to online version
 
-Link: [www.raphael-tholl.ch](www.raphael-tholl.ch)
+Link: [www.raphael-tholl.ch](http://raphael-tholl.ch)
 
 ## Requirements
 
