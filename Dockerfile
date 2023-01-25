@@ -12,7 +12,8 @@ COPY . $APP_HOME
 
 RUN chown -R node:node $APP_HOME
 
-RUN npm install --no-audit --no-fund
+RUN npm install -g npm@9.3.1 &&\
+    npm install --no-audit --no-fund
 
 EXPOSE 8000
 

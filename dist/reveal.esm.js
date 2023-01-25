@@ -1,6 +1,6 @@
 /*!
-* reveal.js 4.4.0
-* https://revealjs.com
+* reveal.js 1.0.0
+* https://www.linkedin.com/in/raphael-tholl/
 * MIT licensed
 *
 * Copyright (C) 2011-2023 Hakim El Hattab, https://hakim.se

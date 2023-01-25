@@ -1,13 +1,13 @@
 # Makefile for Node-RED using IBM Container Registry and IBM Code Engine
 
-ICR_ID=de.icr.io/selfintro-raptho
-IMG_NAME:="reveal-app"
+ICR_ID=de.icr.io/codeengine-selfintro-raph-3e7a
+IMG_NAME:="selfintro-raphael-tholl"
 IMG_VERSION:="1.0"
-CE_PROJECT_NAME="selfintro"
-CE_APP="reveal-app"
+CE_PROJECT_NAME="selfintro-raphael-tholl-revealjs"
+CE_APP="selfintro-raphael-tholl"
 API_KEY=
 
-default: build run
+default: build rm-old push code-engine-update
 
 build:
 	podman build --rm -t $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --layers=false .
@@ -16,7 +16,7 @@ build:
 run:
 	podman run -d \
           --name ${IMG_NAME} \
-          -p8000:8000 \
+          -p 8000:8000 \
           --restart unless-stopped \
           $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION)
 
@@ -48,12 +48,12 @@ apikey-delete:
 code-engine-create:
 	ibmcloud ce project create -n $(CE_PROJECT_NAME)
 	ibmcloud ce registry create --name ibm-container-registry --server de.icr.io --username iamapikey --password $(API_KEY)
-	ibmcloud ce app create --name node-red --image $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --registry-secret ibm-container-registry  --port 1880 --max-scale 1 --cpu 0.25 --memory 0.5G 
+	ibmcloud ce app create --name node-red --image $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --registry-secret ibm-container-registry  --port 8000 --max-scale 1 --cpu 0.25 --memory 0.5G 
 
 code-engine-update:
 	ibmcloud ce project select -n $(CE_PROJECT_NAME)
 	ibmcloud ce app get -n $(CE_APP)
-	ibmcloud ce app update --name $(CE_APP) --image $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --registry-secret ibm-container-registry --port 1880 --max-scale 1 --cpu 0.25 --memory 0.5G
+	ibmcloud ce app update --name $(CE_APP) --image $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --registry-secret ibm-container-registry --port 8000 --max-scale 1 --cpu 0.25 --memory 0.5G
 	ibmcloud ce app logs --name $(CE_APP)
 
 code-engine-delete:
