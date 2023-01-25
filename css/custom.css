@@ -1,85 +1,86 @@
 .introDiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .profilePicture {
-  width: 20%;
+    width: 20%;
 }
+
 .profilePicture img {
-  margin-top: 45px !important;
-  border-radius: 5px;
-  -webkit-box-shadow: 9px 9px 7px -3px rgba(0, 0, 0, 0.36);
-  box-shadow: 9px 9px 7px -3px rgba(0, 0, 0, 0.36);
+    margin-top: 45px !important;
+    border-radius: 5px;
+    -webkit-box-shadow: 9px 9px 7px -3px rgba(0, 0, 0, 0.36);
+    box-shadow: 9px 9px 7px -3px rgba(0, 0, 0, 0.36);
 }
 
 .introCode {
-  width: 80%;
+    width: 80%;
 }
 
 .contactDetails {
-  display: block;
-  align-content: center;
-  justify-content: center;
-  text-align: left;
-  margin-left: 25%;
+    display: block;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+    margin-left: 25%;
 }
 
 .flexRow {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .flexColumn {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
 
 .flexImage {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
 }
 
 .techIcon {
-  height: 55%;
+    height: 55%;
 }
 
 .elastic {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .githubFork {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .githubFork img {
-  width: 45px;
-  height: 70px;
+    width: 45px;
+    height: 70px;
 }
 
 .keepLeft {
-  text-align: left;
+    text-align: left;
 }
 
-div.keepLeft > ul {
-  list-style-type: none;
-  margin-left: 0;
+div.keepLeft>ul {
+    list-style-type: none;
+    margin-left: 0;
 }
 
-div.keepLeft > h3 {
-  letter-spacing: normal;
+div.keepLeft>h3 {
+    letter-spacing: normal;
 }
 
-div.keepLeft > ul > li {
-  margin-top: 10px;
+div.keepLeft>ul>li {
+    margin-top: 10px;
 }

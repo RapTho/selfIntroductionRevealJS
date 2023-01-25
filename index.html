@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
+		
 		<!-- custom styles -->
 		<link rel="stylesheet" href="css/custom.css">
 
@@ -26,23 +27,24 @@
 				</section>
 				<section id="whoami" data-auto-animate>
 					<pre data-id="code-animation"><code data-trim data-line-numbers class="shell">
-						$ whoami
-					</code></pre>
+							$ whoami
+						</code></pre>
 				</section>
 				<section data-auto-animate>
 					<div class="introDiv">
-					<div class="profilePicture">
-						<img src="/assets/images/Raphael_Tholl.jpg" alt="Raphael Tholl" >
+						<div class="profilePicture">
+							<img src="/assets/images/Raphael_Tholl.jpg" alt="Raphael Tholl">
+						</div>
+						<div class="introCode">
+							<pre data-id="code-animation"><code data-trim data-line-numbers=2|3|4|5 class="shell"> <script type="text/template">
+								$ whoami
+								Raphael Tholl
+								Automation Architect @ IBM
+								Board Member @ CH-Open
+								MSc in Engineering
+							</script></code></pre>
+						</div>
 					</div>
-					<div class="introCode">
-						<pre data-id="code-animation" ><code data-trim data-line-numbers=2|3|4 class="shell"> <script type="text/template">
-							$ whoami
-							Raphael Tholl
-							Automation Architect @ IBM
-							MSc in Engineering
-						</script></code></pre>
-					</div>	
-				</div>
 				</section>
 				<section>
 					<h2>Hackathons ❤️</h2>
@@ -51,12 +53,12 @@
 							<div class="flexColumn">
 								<div class="flexImage">
 									<img src="/assets/images/HackZH.jpg">
-								</div>	
+								</div>
 							</div>
 							<div class="flexColumn">
 								<div class="flexImage">
 									<img src="/assets/images/UsiHack.jpg">
-								</div>	
+								</div>
 							</div>
 							<div class="flexColumn">
 								<div class="flexImage">
@@ -81,7 +83,7 @@
 								</div>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</section>
 				<section>
 					<h2>Tech I use 👨‍💻</h2>
@@ -90,12 +92,12 @@
 							<div class="flexColumn">
 								<div class="flexImage techIcon">
 									<img src="assets/images/javaScript.png">
-								</div>	
+								</div>
 							</div>
 							<div class="flexColumn">
 								<div class="flexImage techIcon">
 									<img src="assets/images/python.png">
-								</div>	
+								</div>
 							</div>
 							<div class="flexColumn">
 								<div class="flexImage techIcon">
@@ -120,7 +122,7 @@
 								</div>
 							</div>
 						</div>
-					</div>	
+					</div>
 				</section>
 				<section>
 					<div class="githubFork">
@@ -134,34 +136,34 @@
 				</section>
 				<section id="contactDetails">
 					<div class="contactDetails">
-					<h3>Contact details</h3>
-					<p>
-						🏠<br>
-						IBM Switzerland <br>
-						Raphael Tholl <br>
-						Vulkanstrasse 106 <br>
-						CH - 8048 Zürich <br>
-						<br>
-						📧<br>
-						raphael.tholl@ibm.com <br>
-						<br>
-						🌏 <br>
-						Find me on <a href="https://www.linkedin.com/in/raphael-tholl/">Linkedin</a> and <a href="https://github.com/RapTho">Github</a>
-					</p>
-				</div>
+						<h3>Contact details</h3>
+						<p>
+							🏠<br>
+							IBM Switzerland <br>
+							Raphael Tholl <br>
+							Vulkanstrasse 106 <br>
+							CH - 8048 Zürich <br>
+							<br>
+							📧<br>
+							raphael.tholl@ibm.com <br>
+							<br>
+							🌏 <br>
+							Find me on <a href="https://www.linkedin.com/in/raphael-tholl/">Linkedin</a> and <a
+								href="https://github.com/RapTho">Github</a>
+						</p>
+					</div>
 				</section>
 			</div>
 		</div>
-
+	
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
-		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
 			Reveal.initialize({
 				hash: true,
-				plugins: [  RevealZoom, RevealSearch, RevealHighlight, RevealNotes ]
+				plugins: [RevealHighlight, RevealNotes]
 			});
 		</script>
 	</body>
