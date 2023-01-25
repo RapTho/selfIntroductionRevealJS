@@ -9,8 +9,3 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
-dist/*.map
-.firebase/
-.firebaserc
-firebase.json
-.firebase/hosting..cache
