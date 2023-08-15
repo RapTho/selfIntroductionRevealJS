@@ -10,9 +10,8 @@ WORKDIR $APP_HOME
 
 COPY . $APP_HOME
 
-RUN chown -R node:node $APP_HOME
-
-RUN npm install --no-audit --no-fund
+RUN npm install --no-audit --no-fund &&\
+    chown -R node:node $APP_HOME
 
 EXPOSE 8000
 
