@@ -1,5 +1,5 @@
-# Node 18.12.1 from Dockerhub
-FROM node@sha256:24fa671fefd72b475dd41365717920770bb2702a4fccfd9ef300a3b7f60d6555
+# Node 18.15.0 from Dockerhub
+FROM node@sha256:16d7247706d3f3c52f0d7a8c73fe5805387d7c8007e1f7b05f6b5ef232ea5551
 
 LABEL author="Raphael Tholl raphael.tholl@ibm.com"
 LABEL description="My personal introduction using reveal.js"
@@ -12,8 +12,7 @@ COPY . $APP_HOME
 
 RUN chown -R node:node $APP_HOME
 
-RUN npm install -g npm@9.3.1 &&\
-    npm install --no-audit --no-fund
+RUN npm install --no-audit --no-fund
 
 EXPOSE 8000
 
