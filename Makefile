@@ -11,7 +11,6 @@ default: build rm-old push code-engine-update
 
 build:
 	podman build --rm -t $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --layers=false .
-	podman image prune --filter label=stage=builder --force
 
 run:
 	podman run -d \
