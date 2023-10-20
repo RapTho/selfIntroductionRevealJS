@@ -2,10 +2,6 @@
 
 This repository contains the code of my self introduction which I built using reveal.js
 
-## Link to online version
-
-Link: [www.raphael-tholl.ch](http://raphael-tholl.ch)
-
 ## Requirements
 
 A modern version of Node.js and its package manager npm. Download and install it [here](https://nodejs.org/en/download/).
