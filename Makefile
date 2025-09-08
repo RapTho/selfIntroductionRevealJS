@@ -1,11 +1,11 @@
-# Makefile for Node-RED using IBM Container Registry and IBM Code Engine
+# Makefile for deploying to IBM Cloud Code Engine
 
 ICR_ID=de.icr.io/codeengine-selfintro-raph-3e7a
 IMG_NAME:="selfintro-raphael-tholl"
 IMG_VERSION:="1.0"
 CE_PROJECT_NAME="selfintro-raphael-tholl-revealjs"
 CE_APP="selfintro-raphael-tholl"
-API_KEY=YOUR_API_KEY
+API_KEY=
 
 default: build rm-old push code-engine-update
 
@@ -50,7 +50,6 @@ code-engine-create:
 	ibmcloud ce app create --name node-red --image $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --registry-secret ibm-container-registry  --port 8000 --max-scale 1 --cpu 0.25 --memory 0.5G 
 
 code-engine-update:
-	ibmcloud ce registry update --name ibm-container-registry --password ${API_KEY}
 	ibmcloud ce project select -n $(CE_PROJECT_NAME)
 	ibmcloud ce app get -n $(CE_APP)
 	ibmcloud ce app update --name $(CE_APP) --image $(ICR_ID)/$(IMG_NAME):$(IMG_VERSION) --registry-secret ibm-container-registry --port 8000 --max-scale 1 --cpu 0.25 --memory 0.5G
