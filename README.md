@@ -2,6 +2,8 @@
 
 This repository contains the code of my self introduction which I built using reveal.js
 
+The page is available at [https://raptho.github.io/selfIntroductionRevealJS](https://raptho.github.io/selfIntroductionRevealJS)
+
 ## Requirements
 
 A modern version of Node.js and its package manager npm. Download and install it [here](https://nodejs.org/en/download/).
