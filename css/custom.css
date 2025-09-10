@@ -5,6 +5,13 @@
     width: 100%;
 }
 
+@keyframes pulseScale { 0% { transform: scale(1); } 50% { transform: scale(1.2); } 100% { transform: scale(1); } }
+.clickRight {
+    opacity:0.35;
+    margin-top:2em;
+    animation: pulseScale 2s ease-in-out infinite;
+}
+
 .profilePicture {
     width: 20%;
 }
